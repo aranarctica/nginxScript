@@ -3,7 +3,7 @@
 apt-get update
 apt-get upgrade
 sudo apt-get install nginx -y
-sed -i 's/servername localhost/servername nirelocal/g' /etc/nginx/conf/nginx.conf > /etc/nginx/conf/nginx.conf
+sed -i 's/servername localhost/servername nirelocal.domain/g' /etc/nginx/conf/nginx.conf > /etc/nginx/conf/nginx.conf
 sed -i 's/listen 80 /listen 8080/g' /etc/nginx/conf/nginx.conf > /etc/nginx/conf/nginx.conf
 apt-get restart nginx
 apt-get update
